@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orpheas Project!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon added -->
+    <style>
+        body {
+            font-family: 'Crimson Text', serif;
+            background-image: url('bg.png'); /* Use a new vintage-style background */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Adjust to allow credits at the bottom */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Old Standard TT', serif;
+            color: #2b2b2b;
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 240, 0.9); /* Softer, cream-colored background */
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4); /* A deeper, soft shadow for a vintage effect */
+            max-width: 700px;
+            margin: 20px;
+            position: relative;
+            z-index: 1;
+            font-style: italic;
+        }
+
+        /* Enhanced vignette effect focused only on corners */
+        .vignette {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top left, rgba(0, 0, 0, 0.7) 15%, transparent 50%),
+                        radial-gradient(circle at top right, rgba(0, 0, 0, 0.7) 15%, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.7) 15%, transparent 50%),
+                        radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.7) 15%, transparent 50%);
+            z-index: 0;
+        }
+
+        /* Optional decorative elements */
+        .content::before {
+            content: '❦';
+            font-size: 3em;
+            color: #2b2b2b;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .content::after {
+            content: '❦';
+            font-size: 3em;
+            color: #2b2b2b;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Credits section */
+        .credits {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1em;
+            color: #4a4a4a;
+            font-style: italic;
+            background-color: rgba(255, 255, 240, 0.9);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="vignette"></div>
+    <div class="content">
+        <h1>Ο παππούς και το εγγονάκι!</h1>
+        <p>
+            Αρχικά ο γιος και η νύφη αντιμετώπιζαν τον παππού σαν να ήταν ένα ασήμαντο μέλος  στην οικογένεια. Δεν τον ήθελαν ούτε στο τραπέζι να συμφάει μαζί τους. Απαξίωναν τον γέρο σαν άνθρωπο.
+            Όταν ο γιος τους με την πράξη του, τους έκανε να σκεφτούν, τότε κατάλαβαν πως όσο γερνάει ο άνθρωπος, οι δυνάμεις του τον εγκαταλείπουν. Έτσι έδωσαν στον παππού την θέση του σεβαστού προσώπου της οικογένειας, δηλαδή την θέση του στο τραπέζι.
+        </p>
+    </div>
+    <div class="credits">
+        Σας ευχαριστώ για την ανάγνωση, Ορφέας Γεωργακόπουλος!
+    </div>
+</body>
+</html>
